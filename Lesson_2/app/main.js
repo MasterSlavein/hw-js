@@ -18,7 +18,7 @@ switch(true){
 
 }
 
-/**  Task 2 
+//Task 2 
 const gold_sand1 = +prompt('Enter the price of first sand')
 const gold_sand2 = +prompt('Enter the price of second sand')
 const gold_sand3 = +prompt('Enter the price of third sand')
@@ -30,11 +30,11 @@ let gold_sand = [gold_sand1, gold_sand2, gold_sand3]
 let weight_sand = [weight_sand1, weight_sand2, weight_sand3]
 let a = gold_sand.sort(function(a, b) { return a - b; })
 let b = weight_sand.sort(function(a, b) { return a - b; })
-//a = math.matrix(a)
-//b = math.matrix(b)
-//let c = math.multiply(a, b)
-//alert(`Price ${c}`)
-*/
+a = math.matrix(a)
+b = math.matrix(b)
+let c = math.multiply(a, b)
+alert(`Price ${c}`)
+
 // Task 3 
 
 const number = +prompt('Enter your ticket number')
