@@ -20,15 +20,27 @@ function twoOldestAges(array){
 alert(`Two oldest ages are ${min_age[0]} and ${min_age[1]} years`)
 }
 
-twoOldestAges(ages_array)
+twoOldestAges(ages_array);
 
 //Task 3 
-const piece_of_text = "bitcoin take over the world maybe who knows perhaps"
+const piece_of_text = "bitcoin take over the world maybe who knows perhaps";
 
 function shortest_Word(text){
     let text_array = text.split(" ")
     text_array = text_array.sort((a,b) => a.length - b.length)
-alert(`Minimal length of the word is equal to ${text_array[0]} symbols`)
+alert(`Minimal length of the word is equal to ${text_array[0].length} symbols`)
 }
 
-shortest_Word(piece_of_text)
+shortest_Word(piece_of_text);
+
+//Task 4
+const some_text = "4of Fo1r pe6ople g3ood th5e the2";
+
+function yourOrder(text){
+    text = text.split(" ");
+    text = text.sort(function(a,b){return a.match(/\d/) - b.match(/\d/)});
+alert(`${text.join(' ')}`)
+}
+yourOrder(some_text);
+
+// Task 5 
